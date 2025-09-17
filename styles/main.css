@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jersey 10', cursive;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+
+.box-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+}
+
+.box-main-text1 {
+    border: 3px solid #004aad;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ececec;
+}
+
+.box-main-text h1 {
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 15px;
+}
+
+.box-main-text p {
+    font-size: 1.1rem;
+    color: #545454;
+    line-height: 1.6;
+}
+
+/* Imágenes */
+.box-main-img img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Bloque que ocupa todo el ancho */
+.full-width {
+    grid-column: span 2;
+    text-align: center;
+}
+
+
+/* Secciones generales */
+section h1,
+section h2 {
+    color: #004aad;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #545454;
+    line-height: 1.6;
+}
+
+.card img {
+    height: 250px;
+    object-fit: contain;
+}
+
+.card-body {
+    background-color: #f9f9f9;
+}
+
+
+form label {
+    font-weight: 600;
+    color: #004aad;
+}
+
+form button {
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #003380;
+}
+
+section h1,
+section h3 {
+    color: #004aad;
+}
+
+
+
+
+.card-title {
+    color: #004aad;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #004aad;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #003380;
+}
+
+
+
+
+/* --------- Responsive --------- */
+@media (max-width: 992px) {
+    .box-main {
+        grid-template-columns: 1fr;
+        /* una sola columna */
+        text-align: center;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+}
